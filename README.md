@@ -48,6 +48,9 @@ keep track both food history and top up amount
 - view more bottom fragment
 
 ## Scan
+- scan qr code which return food ID (F1, F2, F3...)
+
+#### Payment
 1. will check if sufficient balance
 2. after payment will update currStatus of foodDB
 - if no vege food is consumed from last 4 food, vege food currStatus==-1
