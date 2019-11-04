@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityWallet">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/green"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:id="@+id/titleWallet"
+        android:text="@string/titleWallet" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/pink"/>
+
+            <Button
+                android:id="@+id/walletTopUp"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@android:color/transparent"
+                android:textSize="15sp"
+                android:text="@string/walletTopUp" />
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/walletBalance"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:textSize="40sp"
+            android:background="@color/pink"
+            android:gravity="center"/>
+
+        <FrameLayout
+            android:id="@+id/wallet1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/wallet2"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/wallet3"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/wallet4"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/wallet5"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </FrameLayout>
+
+        <FrameLayout
+            android:id="@+id/wallet6"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1">
+        </FrameLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/fragDiscover">
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/fragHistory">
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/fragScan">
+        </FrameLayout>
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/btnWallet"
+            android:text="@string/btnWallet"
+            android:textColor="@color/grey"
+            android:textSize="12sp"
+            android:background="@color/green"
+            android:paddingTop="12sp"
+            android:drawableTop="@drawable/img_wallet"/>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/fragAccount">
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

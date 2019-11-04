@@ -1,0 +1,253 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ActivityScanPayment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/green"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:id="@+id/titleScanPayment"
+        android:text="@string/titleScanPayment" />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:orientation="vertical">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/paymentName"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="2"
+                android:background="@color/pink"
+                android:paddingLeft="20sp"
+                android:gravity="center_vertical"
+                android:textSize="20sp"/>
+
+            <TextView
+                android:id="@+id/paymentCalorie"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/pink"
+                android:gravity="right|center_vertical"
+                android:paddingRight="20sp"
+                android:textSize="15sp"
+                android:textColor="@color/redCalorie"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:orientation="vertical"
+                android:paddingLeft="50sp">
+
+                <TextView
+                    android:id="@+id/paymentIngredient1"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/paymentIngredient2"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/paymentIngredient3"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+                <TextView
+                    android:id="@+id/paymentIngredient4"
+                    android:layout_width="match_parent"
+                    android:layout_height="0dp"
+                    android:layout_weight="1" />
+
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/paymentImage"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:src="@drawable/img_food"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imgCash"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/pink"
+                android:paddingLeft="70sp"
+                android:src="@drawable/img_cash"/>
+
+            <TextView
+                android:id="@+id/paymentPrice"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:background="@color/pink"
+                android:gravity="center_vertical"
+                android:paddingLeft="15sp"
+                android:textSize="15sp"/>
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/paymentDesc"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/pink"
+            android:paddingLeft="50sp"
+            android:paddingRight="50sp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/paymentYourBalance"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/pink"
+                android:gravity="bottom"
+                android:paddingLeft="50sp"
+                android:textSize="20sp"
+                android:text="@string/paymentYourBalance"/>
+
+            <TextView
+                android:id="@+id/paymentBalance"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:gravity="right|bottom"
+                android:paddingRight="50sp"
+                android:textSize="20sp"
+                android:background="@color/pink"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/paymentToPay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/pink"
+                android:gravity="center_vertical"
+                android:paddingLeft="50sp"
+                android:textSize="20sp"
+                android:text="@string/paymentToPay"/>
+
+            <TextView
+                android:id="@+id/paymentPriceToPay"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/pink"
+                android:gravity="right|center_vertical"
+                android:paddingRight="50sp"
+                android:textSize="20sp"/>
+
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/btnPay"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:text="@string/paymentPay"
+            android:background="@color/green"
+            android:textSize="20sp"
+            android:gravity="center"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/fragDiscover">
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/fragHistory">
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/fragScan">
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/fragWallet">
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/fragAccount">
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

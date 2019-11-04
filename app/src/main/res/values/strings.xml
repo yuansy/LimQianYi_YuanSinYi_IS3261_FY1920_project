@@ -1,0 +1,41 @@
+<resources>
+    <string name="app_name">LimQianYi_YuanSinYi_IS3261_FY1920_project</string>
+
+    <string name="titleDiscover">Discover NUS</string>
+    <string name="titleHistory">History</string>
+    <string name="titleScan">Scan</string>
+    <string name="titleScanPayment">Payment</string>
+    <string name="titleScanPaid">Paid</string>
+    <string name="titleWallet">Wallet</string>
+    <string name="titleAccount">Account</string>
+
+    <string name="btnDiscover">Discover</string>
+    <string name="btnHistory">History</string>
+    <string name="btnScan">Scan</string>
+    <string name="btnWallet">Wallet</string>
+    <string name="btnAccount">Account</string>
+
+    <string name="discoverSearch">Search food in NUS</string>
+    <string name="discoverDiscountForYou">Discounted just for you</string>
+    <string name="discoverPopularNow">Popular Now</string>
+    <string name="discoverMoreInNUS">Discover more food in NUS</string>
+
+    <string name="paymentYourBalance">Your Balance:</string>
+    <string name="paymentToPay">To pay:</string>
+    <string name="paymentPay">Pay</string>
+    <string name="paidCanView">You can view the payment details in History or Wallet.</string>
+
+    <string name="walletTopUp">Top Up</string>
+    <string name="walletTopUpAmount">Enter amount</string>
+    <string name="walletTopUpDone">Done</string>
+
+    <string name="accountName">Your Name</string>
+    <string name="accountNameChange">Enter your name</string>
+    <string name="accountNameDone">Done</string>
+
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+
+
+</resources>

@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FragmentHistory">
+
+    <!-- TODO: Update blank fragment layout -->
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/btnHistory"
+        android:text="@string/btnHistory"
+        android:textColor="@color/grey"
+        android:textSize="12sp"
+        android:background="@android:color/transparent"
+        android:paddingTop="12sp"
+        android:drawableTop="@drawable/img_history"/>
+
+</FrameLayout>

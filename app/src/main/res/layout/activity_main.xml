@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:background="@color/green"
+        android:textSize="30sp"
+        android:gravity="center"
+        android:id="@+id/titleDiscover"
+        android:text="@string/titleDiscover" />
+
+    <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="8"
+            android:orientation="vertical">
+
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:paddingLeft="40sp"
+            android:inputType="textPersonName"
+            android:cursorVisible="false"
+            android:background="@color/pink"
+            android:id="@+id/discoverSearch"
+            android:hint="@string/discoverSearch" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/pink"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20sp"
+            android:id="@+id/discoverDiscountForYou"
+            android:text="@string/discoverDiscountForYou" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/discoverDiscountForYou1">
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/discoverDiscountForYou2">
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/discoverDiscountForYou3">
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/pink"
+            android:textSize="20sp"
+            android:gravity="center_vertical"
+            android:paddingLeft="20sp"
+            android:id="@+id/discoverPopularNow"
+            android:text="@string/discoverPopularNow" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="2"
+            android:orientation="horizontal">
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/discoverPopularNow1">
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/discoverPopularNow2">
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/discoverPopularNow3">
+            </FrameLayout>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:orientation="horizontal">
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="4"
+                android:background="@color/pink"
+                android:textSize="20sp"
+                android:gravity="center_vertical"
+                android:paddingLeft="20sp"
+                android:id="@+id/discoverMoreInNUS"
+                android:text="@string/discoverMoreInNUS" />
+
+            <ImageButton
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:id="@+id/discoverMoreInNUSArrow"
+                android:background="@color/pink"
+                app:srcCompat="@drawable/img_discover_arrow" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/btnDiscover"
+            android:text="@string/btnDiscover"
+            android:textColor="@color/grey"
+            android:textSize="12sp"
+            android:background="@color/green"
+            android:paddingTop="12sp"
+            android:drawableTop="@drawable/img_discover"/>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/fragHistory">
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/fragScan">
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/fragWallet">
+        </FrameLayout>
+
+        <FrameLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:id="@+id/fragAccount">
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>
