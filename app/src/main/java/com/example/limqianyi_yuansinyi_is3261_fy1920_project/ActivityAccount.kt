@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.TextView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_account.*
 
@@ -32,6 +33,7 @@ class ActivityAccount : AppCompatActivity() {
 
         transaction.commit()
 
+        val hellotv = findViewById<TextView>(R.id.helloMessage)
         val butAccountName = findViewById<Button>(R.id.accountName)
         butAccountName.setOnClickListener{
             val myIntent = Intent(this, DialogAccount::class.java)
@@ -41,7 +43,9 @@ class ActivityAccount : AppCompatActivity() {
         val sharedPreferences = getSharedPreferences("myPref", Context.MODE_PRIVATE)
         if (sharedPreferences.getString("NAME", "") != "") {
             val accountName = sharedPreferences.getString("NAME", "Your Name")
-            butAccountName.setText(accountName)
+            hellotv.setText("Hello, " + accountName + "!")
+        } else {
+            hellotv.setText("Hello!")
         }
     }
 

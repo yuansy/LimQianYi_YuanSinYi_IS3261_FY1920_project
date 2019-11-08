@@ -4,6 +4,10 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 
+
+
+
+
 class ActivityHistory : AppCompatActivity() {
 
     lateinit var foodDBHelper: FoodDBHelper
@@ -12,6 +16,8 @@ class ActivityHistory : AppCompatActivity() {
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_history)
+
+
 
         val fragmentManager = supportFragmentManager
         val transaction = fragmentManager.beginTransaction()
