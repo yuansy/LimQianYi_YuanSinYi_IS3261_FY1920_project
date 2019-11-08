@@ -25,16 +25,32 @@
             android:orientation="vertical">
 
 
-        <EditText
+        <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
             android:layout_weight="1"
-            android:paddingLeft="40sp"
-            android:inputType="textPersonName"
-            android:cursorVisible="false"
-            android:background="@color/pink"
-            android:id="@+id/discoverSearch"
-            android:hint="@string/discoverSearch" />
+            android:orientation="horizontal">
+
+            <EditText
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="3"
+                android:paddingLeft="40sp"
+                android:inputType="textPersonName"
+                android:cursorVisible="false"
+                android:background="@color/pink"
+                android:id="@+id/discoverSearch"
+                android:hint="@string/discoverSearch" />
+
+            <Button
+                android:id="@+id/btnSearch"
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@color/green"
+                android:text="Search" />
+
+        </LinearLayout>
 
         <TextView
             android:layout_width="match_parent"
