@@ -5,6 +5,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import java.text.SimpleDateFormat
@@ -58,6 +59,9 @@ class ActivityScanPayment : AppCompatActivity() {
         val calorie = findViewById<TextView>(R.id.paymentCalorie)
         calorie.text = food.calorie.toString() + "kcal"
 
+        val foodImage = findViewById<ImageView>(R.id.paymentImage)
+        val id = resources.getIdentifier(food.ID, "drawable", packageName)
+        foodImage.setImageResource(id)
         val ingredient1 = findViewById<TextView>(R.id.paymentIngredient1)
         ingredient1.text = food.ingredient1
         val ingredient2 = findViewById<TextView>(R.id.paymentIngredient2)

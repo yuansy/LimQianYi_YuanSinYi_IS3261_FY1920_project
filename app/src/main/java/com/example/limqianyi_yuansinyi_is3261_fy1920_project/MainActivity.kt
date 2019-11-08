@@ -157,11 +157,17 @@ class MainActivity : AppCompatActivity() {
         addFood(FoodDataRecord("F11", "Nasi Lemak", 4.5F, 4.5F, 4.8F, 579,
         "unhealthy", "Engineering Techno", "fried chicken", "anchovies",
         "sambal", "egg", 0))
-        /**
-        F12	Mala	6	6	6.5	450	unhealthy	Utown Foodclique	pork	lotus root	black fungus	chilli pepper
-        F13	Fish and Chips	5	5	5.4	580	unhealthy	Arts Deck	fish fillet	chips	egg	lemon
-        F14	Vegetarian	3	2.8	3.2	290	vege	Science Frontier	brocolli	tomato	egg	white rice
-        F15	Fish Soup	4	3.7	4.3	210	meat	Science Frontier	fish	vegetables	tomato	broth
-         **/
+        addFood(FoodDataRecord("F12", "Mala Hotpot", 6F, 6F, 6.5F, 700,
+            "unhealthy", "Utown Foodclique", "chilli pepper sauce", "pork",
+            "lotus root", "black fungus", 0))
+        addFood(FoodDataRecord("F13", "Fish and Chips", 5F, 5F, 5.4F, 580,
+            "unhealthy", "Arts Deck", "fish fillet", "chips",
+            "egg", "oil", 0))
+        addFood(FoodDataRecord("F14", "Vegetarian", 3F, 2.8F, 3.2F, 290,
+            "vege", "Science Frontier", "brocolli", "tomato",
+            "egg", "white rice", 0))
+        addFood(FoodDataRecord("F15", "Fish Soup", 4F, 3.7F, 4.3F, 210,
+            "meat", "Science Frontier", "fish", "vegetables",
+            "tomato", "broth", 0))
     }
 }

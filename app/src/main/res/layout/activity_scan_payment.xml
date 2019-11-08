@@ -55,15 +55,16 @@
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="1"
-            android:orientation="horizontal">
+            android:layout_weight="1.5"
+            android:orientation="horizontal"
+            android:paddingHorizontal="50sp"
+            android:paddingVertical="20sp">
 
             <LinearLayout
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:orientation="vertical"
-                android:paddingLeft="50sp">
+                android:orientation="vertical">
 
                 <TextView
                     android:id="@+id/paymentIngredient1"
@@ -96,7 +97,8 @@
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
                 android:layout_weight="1"
-                android:src="@drawable/img_food"/>
+                android:paddingLeft="20sp"
+                android:src="@drawable/img_food" />
 
         </LinearLayout>
 
@@ -146,12 +148,12 @@
                 android:id="@+id/paymentYourBalance"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="0.8"
                 android:background="@color/pink"
                 android:gravity="bottom"
-                android:paddingLeft="50sp"
-                android:textSize="20sp"
-                android:text="@string/paymentYourBalance"/>
+                android:paddingLeft="40sp"
+                android:text="@string/paymentYourBalance"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/paymentBalance"
@@ -175,12 +177,12 @@
                 android:id="@+id/paymentToPay"
                 android:layout_width="0dp"
                 android:layout_height="match_parent"
-                android:layout_weight="1"
+                android:layout_weight="0.8"
                 android:background="@color/pink"
                 android:gravity="center_vertical"
-                android:paddingLeft="50sp"
-                android:textSize="20sp"
-                android:text="@string/paymentToPay"/>
+                android:paddingLeft="40sp"
+                android:text="@string/paymentToPay"
+                android:textSize="20sp" />
 
             <TextView
                 android:id="@+id/paymentPriceToPay"
