@@ -23,7 +23,7 @@
             android:layout_height="0dp"
             android:layout_weight="8"
             android:orientation="vertical">
-        
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="0dp"
@@ -186,7 +186,7 @@
             android:textSize="12sp"
             android:background="@color/green"
             android:paddingTop="12sp"
-            android:drawableTop="@drawable/img_discover"/>
+            android:drawableTop="@drawable/img_discover" />
 
         <FrameLayout
             android:layout_width="0dp"

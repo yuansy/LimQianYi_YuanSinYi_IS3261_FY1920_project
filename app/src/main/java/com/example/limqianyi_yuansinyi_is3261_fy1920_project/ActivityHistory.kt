@@ -17,8 +17,6 @@ class ActivityHistory : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_history)
 
-
-
         val fragmentManager = supportFragmentManager
         val transaction = fragmentManager.beginTransaction()
 
@@ -39,6 +37,18 @@ class ActivityHistory : AppCompatActivity() {
         transaction.add(R.id.history3, fragmentRecord3)
         val fragmentRecord4 = FragmentHistoryRecord()
         transaction.add(R.id.history4, fragmentRecord4)
+        val fragmentRecord5 = FragmentHistoryRecord()
+        transaction.add(R.id.history5, fragmentRecord5)
+        val fragmentRecord6 = FragmentHistoryRecord()
+        transaction.add(R.id.history6, fragmentRecord6)
+        val fragmentRecord7 = FragmentHistoryRecord()
+        transaction.add(R.id.history7, fragmentRecord7)
+        val fragmentRecord8 = FragmentHistoryRecord()
+        transaction.add(R.id.history8, fragmentRecord8)
+        val fragmentRecord9 = FragmentHistoryRecord()
+        transaction.add(R.id.history9, fragmentRecord9)
+        val fragmentRecord10 = FragmentHistoryRecord()
+        transaction.add(R.id.history10, fragmentRecord10)
 
         transaction.commit()
 
@@ -49,7 +59,7 @@ class ActivityHistory : AppCompatActivity() {
 
         var historyLast4 = ArrayList<TransactionDataRecord>()
         allTransactionReversed.forEach{
-            if (it.name != "Top Up" && historyLast4.size != 4){
+            if (it.name != "Top Up" && historyLast4.size != 10){
                 historyLast4.add(it)
             }
         }
@@ -138,6 +148,126 @@ class ActivityHistory : AppCompatActivity() {
             mArgs.putString("STATUS", status.toString())
             mArgs.putString("ID", food.ID)
             fragmentRecord4.setArguments(mArgs)
+        }
+        if (historyLast4.size>=5) {
+            historyDisplay = historyLast4.get(4)
+            food = foodDBHelper.readFood(historyDisplay.ID).get(0)
+            status = historyDisplay.status
+            mArgs = Bundle()
+            mArgs.putString("LINE1", food.name)
+            mArgs.putString("LINE2", "$" + "%.2f".format(food.price))
+            if (status==-1){
+                mArgs.putString("LINE3", "$" + "%.2f".format(food.priceDiscount))
+            } else if (status==0) {
+                mArgs.putString("LINE3", "")
+            } else if (status==1) {
+                mArgs.putString("LINE3", "$" + "%.2f".format(food.priceIncrease))
+            }
+            mArgs.putString("LINE4", food.calorie.toString() + " kcal")
+            mArgs.putString("LINE5", historyDisplay.dateTime.take(6))
+            mArgs.putString("STATUS", status.toString())
+            mArgs.putString("ID", food.ID)
+            fragmentRecord5.setArguments(mArgs)
+        }
+        if (historyLast4.size>=6) {
+            historyDisplay = historyLast4.get(5)
+            food = foodDBHelper.readFood(historyDisplay.ID).get(0)
+            status = historyDisplay.status
+            mArgs = Bundle()
+            mArgs.putString("LINE1", food.name)
+            mArgs.putString("LINE2", "$" + "%.2f".format(food.price))
+            if (status==-1){
+                mArgs.putString("LINE3", "$" + "%.2f".format(food.priceDiscount))
+            } else if (status==0) {
+                mArgs.putString("LINE3", "")
+            } else if (status==1) {
+                mArgs.putString("LINE3", "$" + "%.2f".format(food.priceIncrease))
+            }
+            mArgs.putString("LINE4", food.calorie.toString() + " kcal")
+            mArgs.putString("LINE5", historyDisplay.dateTime.take(6))
+            mArgs.putString("STATUS", status.toString())
+            mArgs.putString("ID", food.ID)
+            fragmentRecord6.setArguments(mArgs)
+        }
+        if (historyLast4.size>=7) {
+            historyDisplay = historyLast4.get(6)
+            food = foodDBHelper.readFood(historyDisplay.ID).get(0)
+            status = historyDisplay.status
+            mArgs = Bundle()
+            mArgs.putString("LINE1", food.name)
+            mArgs.putString("LINE2", "$" + "%.2f".format(food.price))
+            if (status==-1){
+                mArgs.putString("LINE3", "$" + "%.2f".format(food.priceDiscount))
+            } else if (status==0) {
+                mArgs.putString("LINE3", "")
+            } else if (status==1) {
+                mArgs.putString("LINE3", "$" + "%.2f".format(food.priceIncrease))
+            }
+            mArgs.putString("LINE4", food.calorie.toString() + " kcal")
+            mArgs.putString("LINE5", historyDisplay.dateTime.take(6))
+            mArgs.putString("STATUS", status.toString())
+            mArgs.putString("ID", food.ID)
+            fragmentRecord7.setArguments(mArgs)
+        }
+        if (historyLast4.size>=8) {
+            historyDisplay = historyLast4.get(7)
+            food = foodDBHelper.readFood(historyDisplay.ID).get(0)
+            status = historyDisplay.status
+            mArgs = Bundle()
+            mArgs.putString("LINE1", food.name)
+            mArgs.putString("LINE2", "$" + "%.2f".format(food.price))
+            if (status==-1){
+                mArgs.putString("LINE3", "$" + "%.2f".format(food.priceDiscount))
+            } else if (status==0) {
+                mArgs.putString("LINE3", "")
+            } else if (status==1) {
+                mArgs.putString("LINE3", "$" + "%.2f".format(food.priceIncrease))
+            }
+            mArgs.putString("LINE4", food.calorie.toString() + " kcal")
+            mArgs.putString("LINE5", historyDisplay.dateTime.take(6))
+            mArgs.putString("STATUS", status.toString())
+            mArgs.putString("ID", food.ID)
+            fragmentRecord8.setArguments(mArgs)
+        }
+        if (historyLast4.size>=9) {
+            historyDisplay = historyLast4.get(8)
+            food = foodDBHelper.readFood(historyDisplay.ID).get(0)
+            status = historyDisplay.status
+            mArgs = Bundle()
+            mArgs.putString("LINE1", food.name)
+            mArgs.putString("LINE2", "$" + "%.2f".format(food.price))
+            if (status==-1){
+                mArgs.putString("LINE3", "$" + "%.2f".format(food.priceDiscount))
+            } else if (status==0) {
+                mArgs.putString("LINE3", "")
+            } else if (status==1) {
+                mArgs.putString("LINE3", "$" + "%.2f".format(food.priceIncrease))
+            }
+            mArgs.putString("LINE4", food.calorie.toString() + " kcal")
+            mArgs.putString("LINE5", historyDisplay.dateTime.take(6))
+            mArgs.putString("STATUS", status.toString())
+            mArgs.putString("ID", food.ID)
+            fragmentRecord9.setArguments(mArgs)
+        }
+        if (historyLast4.size>=10) {
+            historyDisplay = historyLast4.get(9)
+            food = foodDBHelper.readFood(historyDisplay.ID).get(0)
+            status = historyDisplay.status
+            mArgs = Bundle()
+            mArgs.putString("LINE1", food.name)
+            mArgs.putString("LINE2", "$" + "%.2f".format(food.price))
+            if (status==-1){
+                mArgs.putString("LINE3", "$" + "%.2f".format(food.priceDiscount))
+            } else if (status==0) {
+                mArgs.putString("LINE3", "")
+            } else if (status==1) {
+                mArgs.putString("LINE3", "$" + "%.2f".format(food.priceIncrease))
+            }
+            mArgs.putString("LINE4", food.calorie.toString() + " kcal")
+            mArgs.putString("LINE5", historyDisplay.dateTime.take(6))
+            mArgs.putString("STATUS", status.toString())
+            mArgs.putString("ID", food.ID)
+            fragmentRecord10.setArguments(mArgs)
         }
 
     }

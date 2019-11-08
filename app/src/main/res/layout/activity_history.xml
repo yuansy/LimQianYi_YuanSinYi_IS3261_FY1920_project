@@ -17,47 +17,93 @@
         android:text="@string/titleHistory"
         android:textSize="20sp" />
 
-    <LinearLayout
+    <ScrollView
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="8"
-        android:orientation="vertical">
+        android:background="@color/pink">
 
-        <lecho.lib.hellocharts.view.LineChartView
-            android:id="@+id/chart"
+        <LinearLayout
             android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"/>
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:id="@+id/history1">
-        </FrameLayout>
+<!--        <lecho.lib.hellocharts.view.LineChartView-->
+<!--            android:id="@+id/chart"-->
+<!--            android:layout_width="match_parent"-->
+<!--            android:layout_height="0dp"-->
+<!--            android:layout_weight="1"/>-->
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:id="@+id/history2">
-        </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dip"
+                android:layout_weight="1"
+                android:id="@+id/history1">
+            </FrameLayout>
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:id="@+id/history3">
-        </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dip"
+                android:layout_weight="1"
+                android:id="@+id/history2">
+            </FrameLayout>
 
-        <FrameLayout
-            android:layout_width="match_parent"
-            android:layout_height="0dp"
-            android:layout_weight="1"
-            android:id="@+id/history4">
-        </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dip"
+                android:layout_weight="1"
+                android:id="@+id/history3">
+            </FrameLayout>
 
-    </LinearLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dip"
+                android:layout_weight="1"
+                android:id="@+id/history4">
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dip"
+                android:layout_weight="1"
+                android:id="@+id/history5">
+            </FrameLayout>
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dip"
+                android:layout_weight="1"
+                android:id="@+id/history6">
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dip"
+                android:layout_weight="1"
+                android:id="@+id/history7">
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dip"
+                android:layout_weight="1"
+                android:id="@+id/history8">
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dip"
+                android:layout_weight="1"
+                android:id="@+id/history9">
+            </FrameLayout>
+
+            <FrameLayout
+                android:layout_width="match_parent"
+                android:layout_height="150dip"
+                android:layout_weight="1"
+                android:id="@+id/history10">
+            </FrameLayout>
+        </LinearLayout>
+    </ScrollView>
 
 
     <LinearLayout

@@ -62,6 +62,8 @@ class FragmentHistoryRecord : Fragment() {
 
             var ID = args.getString("ID")
             val butViewMore = view.findViewById<Button>(R.id.historybtnViewMore)
+            butViewMore.text = "View"
+            butViewMore.setBackgroundColor(getResources().getColor(R.color.green, null))
             butViewMore.setOnClickListener{
                 val intent = Intent (getActivity(), ActivityViewMore::class.java)
                 intent.putExtra("ID", ID)

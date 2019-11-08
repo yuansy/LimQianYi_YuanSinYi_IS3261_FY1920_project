@@ -45,7 +45,14 @@ class ActivityWallet : AppCompatActivity() {
         transaction.add(R.id.wallet5, fragmentRecord5)
         val fragmentRecord6 = FragmentWalletRecord()
         transaction.add(R.id.wallet6, fragmentRecord6)
-
+        val fragmentRecord7 = FragmentWalletRecord()
+        transaction.add(R.id.wallet7, fragmentRecord7)
+        val fragmentRecord8 = FragmentWalletRecord()
+        transaction.add(R.id.wallet8, fragmentRecord8)
+        val fragmentRecord9 = FragmentWalletRecord()
+        transaction.add(R.id.wallet9, fragmentRecord9)
+        val fragmentRecord10 = FragmentWalletRecord()
+        transaction.add(R.id.wallet10, fragmentRecord10)
 
         transaction.commit()
 
@@ -113,6 +120,38 @@ class ActivityWallet : AppCompatActivity() {
             mArgs.putString("LINE2", transactionDisplay.dateTime)
             mArgs.putString("LINE3", amountStirng(transactionDisplay.amount))
             fragmentRecord6.setArguments(mArgs)
+        }
+        if (allTransaction.size>=7) {
+            transactionDisplay = allTransaction.get(allTransaction.size-7)
+            mArgs = Bundle()
+            mArgs.putString("LINE1", transactionDisplay.name)
+            mArgs.putString("LINE2", transactionDisplay.dateTime)
+            mArgs.putString("LINE3", amountStirng(transactionDisplay.amount))
+            fragmentRecord7.setArguments(mArgs)
+        }
+        if (allTransaction.size>=8) {
+            transactionDisplay = allTransaction.get(allTransaction.size-8)
+            mArgs = Bundle()
+            mArgs.putString("LINE1", transactionDisplay.name)
+            mArgs.putString("LINE2", transactionDisplay.dateTime)
+            mArgs.putString("LINE3", amountStirng(transactionDisplay.amount))
+            fragmentRecord8.setArguments(mArgs)
+        }
+        if (allTransaction.size>=9) {
+            transactionDisplay = allTransaction.get(allTransaction.size-9)
+            mArgs = Bundle()
+            mArgs.putString("LINE1", transactionDisplay.name)
+            mArgs.putString("LINE2", transactionDisplay.dateTime)
+            mArgs.putString("LINE3", amountStirng(transactionDisplay.amount))
+            fragmentRecord9.setArguments(mArgs)
+        }
+        if (allTransaction.size>=10) {
+            transactionDisplay = allTransaction.get(allTransaction.size-10)
+            mArgs = Bundle()
+            mArgs.putString("LINE1", transactionDisplay.name)
+            mArgs.putString("LINE2", transactionDisplay.dateTime)
+            mArgs.putString("LINE3", amountStirng(transactionDisplay.amount))
+            fragmentRecord10.setArguments(mArgs)
         }
 
     }

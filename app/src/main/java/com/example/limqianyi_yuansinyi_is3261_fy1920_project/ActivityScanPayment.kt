@@ -60,8 +60,9 @@ class ActivityScanPayment : AppCompatActivity() {
         calorie.text = food.calorie.toString() + "kcal"
 
         val foodImage = findViewById<ImageView>(R.id.paymentImage)
-        val id = resources.getIdentifier(food.ID, "drawable", packageName)
+        val id = resources.getIdentifier(food.ID.toLowerCase(), "drawable", packageName)
         foodImage.setImageResource(id)
+
         val ingredient1 = findViewById<TextView>(R.id.paymentIngredient1)
         ingredient1.text = food.ingredient1
         val ingredient2 = findViewById<TextView>(R.id.paymentIngredient2)
