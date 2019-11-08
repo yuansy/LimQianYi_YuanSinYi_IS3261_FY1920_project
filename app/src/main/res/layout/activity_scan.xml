@@ -8,14 +8,14 @@
     tools:context=".ActivityScan">
 
     <TextView
+        android:id="@+id/titleScan"
         android:layout_width="match_parent"
         android:layout_height="0dp"
         android:layout_weight="1"
         android:background="@color/green"
-        android:textSize="30sp"
         android:gravity="center"
-        android:id="@+id/titleScan"
-        android:text="@string/titleScan" />
+        android:text="@string/titleScan"
+        android:textSize="20sp" />
 
     <SurfaceView
         android:id="@+id/scanCamera"

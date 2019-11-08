@@ -12,7 +12,7 @@
         android:layout_height="0dp"
         android:layout_weight="1"
         android:background="@color/green"
-        android:textSize="30sp"
+        android:textSize="20sp"
         android:gravity="center"
         android:id="@+id/titleAccount"
         android:text="@string/titleAccount" />
@@ -23,15 +23,35 @@
         android:layout_weight="8"
         android:orientation="vertical">
 
-        <Button
+        <TextView
+            android:id="@+id/helloMessage"
             android:layout_width="match_parent"
             android:layout_height="0dp"
-            android:layout_weight="2"
+            android:layout_weight="1"
+            android:background="@color/pink"
+            android:textAlignment="center"
+            android:paddingTop="20dp"
+            android:textSize="24sp"/>
+
+        <TextView
+            android:id="@+id/bmiText"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
+            android:background="@color/pink"
+            android:textAlignment="center"
+            android:paddingTop="20dp"
+            android:textSize="20sp" />
+
+        <Button
             android:id="@+id/accountName"
+            android:layout_width="match_parent"
+            android:layout_height="0dp"
+            android:layout_weight="1"
             android:background="@color/pink"
             android:gravity="center"
-            android:text="@string/accountName"
-            android:textSize="40sp"/>
+            android:text="Settings"
+            android:textSize="24sp" />
 
         <ScrollView
             android:layout_width="match_parent"
