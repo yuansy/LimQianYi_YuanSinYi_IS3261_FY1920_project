@@ -44,8 +44,10 @@ keep track both food history and top up amount
 ## History
 
 #### TODO
-- food image
-- view more bottom fragment
+- food image (qian yi)
+- line graph (qian yi)
+- view more bottom fragment (sin yi)
+- scroll view (sin yi)
 
 ## Scan
 - scan qr code which return food ID (F1, F2, F3...)
@@ -60,13 +62,17 @@ keep track both food history and top up amount
 
 
 #### TODO
-- food image
+- food image (qian yi)
 
 
-## History
-- attempted to use dialog for topup but couldnt figure out so i use activity
+## Wallet
+
+#### TODO
+- attempted to use dialog for topup but couldnt figure out so i use activity (qian yi try but unlikely can)
+- scroll view (sin yi)
 
 ## Account
 
 ## TODO
-- link to internet
+- link to internet (qian yi)
+- BMI calculator
