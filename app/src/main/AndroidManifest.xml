@@ -11,7 +11,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".DialogWalletTopUp"></activity>
+        <activity android:name=".ActivityViewMore"></activity>
+        <activity android:name=".DialogWalletTopUp" />
         <activity android:name=".ActivityScanPayment" />
         <activity android:name=".ActivityScanPaymentNormal" />
         <activity android:name=".DialogAccount" />

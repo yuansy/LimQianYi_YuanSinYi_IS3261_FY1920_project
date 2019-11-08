@@ -1,11 +1,14 @@
 package com.example.limqianyi_yuansinyi_is3261_fy1920_project
 
 
+import android.content.Intent
+import android.os.Build.ID
 import android.os.Bundle
 import androidx.fragment.app.Fragment
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
+import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
 
@@ -55,6 +58,15 @@ class FragmentHistoryRecord : Fragment() {
                 twLine3.setTextColor(getResources().getColor(R.color.greenPrice, null))
             } else if (status=="1"){
                 twLine3.setTextColor(getResources().getColor(R.color.redPrice, null))
+            }
+
+            var ID = args.getString("ID")
+            val butViewMore = view.findViewById<Button>(R.id.historybtnViewMore)
+            butViewMore.setOnClickListener{
+                val intent = Intent (getActivity(), ActivityViewMore::class.java)
+                intent.putExtra("ID", ID)
+                intent.putExtra("type", "history")
+                getActivity()!!.startActivity(intent)
             }
         }
 

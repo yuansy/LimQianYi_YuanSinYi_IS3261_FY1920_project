@@ -76,6 +76,7 @@ class ActivityHistory : AppCompatActivity() {
             mArgs.putString("LINE4", food.calorie.toString() + " kcal")
             mArgs.putString("LINE5", historyDisplay.dateTime.take(6))
             mArgs.putString("STATUS", status.toString())
+            mArgs.putString("ID", food.ID)
             fragmentRecord1.setArguments(mArgs)
         }
         if (historyLast4.size>=2) {
@@ -95,6 +96,7 @@ class ActivityHistory : AppCompatActivity() {
             mArgs.putString("LINE4", food.calorie.toString() + " kcal")
             mArgs.putString("LINE5", historyDisplay.dateTime.take(6))
             mArgs.putString("STATUS", status.toString())
+            mArgs.putString("ID", food.ID)
             fragmentRecord2.setArguments(mArgs)
         }
         if (historyLast4.size>=3) {
@@ -114,6 +116,7 @@ class ActivityHistory : AppCompatActivity() {
             mArgs.putString("LINE4", food.calorie.toString() + " kcal")
             mArgs.putString("LINE5", historyDisplay.dateTime.take(6))
             mArgs.putString("STATUS", status.toString())
+            mArgs.putString("ID", food.ID)
             fragmentRecord3.setArguments(mArgs)
         }
         if (historyLast4.size>=4) {
@@ -133,6 +136,7 @@ class ActivityHistory : AppCompatActivity() {
             mArgs.putString("LINE4", food.calorie.toString() + " kcal")
             mArgs.putString("LINE5", historyDisplay.dateTime.take(6))
             mArgs.putString("STATUS", status.toString())
+            mArgs.putString("ID", food.ID)
             fragmentRecord4.setArguments(mArgs)
         }
 

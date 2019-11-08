@@ -1,8 +1,12 @@
 package com.example.limqianyi_yuansinyi_is3261_fy1920_project
 
+import android.app.PendingIntent.getActivity
+import android.content.Intent
+import android.os.Build.ID
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
+import android.widget.Button
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_main.*
 import java.security.spec.RSAKeyGenParameterSpec.F4
@@ -117,6 +121,25 @@ class MainActivity : AppCompatActivity() {
         mArgs6.putString("LINE2", "$" + "%.2f".format(foodPopular3.priceDiscount))
         mArgs6.putString("LINE3", foodPopular3.calorie.toString() + " kcal")
         fragmentDiscoverPopularNow3.setArguments(mArgs6)
+
+
+        val butSearch = findViewById<Button>(R.id.btnSearch)
+        butSearch.setOnClickListener {
+            val intent = Intent(this, ActivityViewMore::class.java)
+            var foodNameSearch = discoverSearch.text.toString()
+            var searchID = ""
+            food.forEach{
+                if (foodNameSearch.toLowerCase()==it.name.toLowerCase()){
+                    searchID = it.ID
+                    intent.putExtra("ID", searchID)
+                    intent.putExtra("type", "search")
+                    startActivity(intent)
+                }
+            }
+            if (searchID==""){
+                Toast.makeText(this, "No such food!", Toast.LENGTH_LONG).show()
+            }
+        }
     }
 
     fun addFood(food: FoodDataRecord) {
@@ -126,7 +149,7 @@ class MainActivity : AppCompatActivity() {
     fun initFoodDB() {
         addFood(FoodDataRecord("F1", "Ban Mian", 3F, 2.8F, 3.2F, 300,
             "mix", "Utown Foodclique", "vegetables", "egg noodles",
-            "pork", "pork", 0 ))
+            "pork", "egg", 0 ))
         addFood(FoodDataRecord("F2", "Salad", 4F, 3.7F, 4.3F, 152,
             "vege", "Computing Terrace", "vegetables", "tomato",
             "peanut", "sesame oil", 0))
