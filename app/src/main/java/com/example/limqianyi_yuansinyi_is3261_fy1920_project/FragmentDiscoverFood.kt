@@ -9,6 +9,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 
 /**
@@ -24,6 +25,12 @@ class FragmentDiscoverFood : Fragment() {
         val view = inflater.inflate(R.layout.fragment_fragment_discover_food, container, false)
 
         var args = getArguments()
+
+        var id = resources.getIdentifier(args!!.getString("ID").toLowerCase(), "drawable",
+            activity?.packageName
+        )
+        var imgFood = view.findViewById<ImageView>(R.id.discoverFoodImage)
+        imgFood.setImageResource(id)
 
         var Line1 = args!!.getString("LINE1")
         var twLine1 = view.findViewById<TextView>(R.id.discoverFoodLine1)

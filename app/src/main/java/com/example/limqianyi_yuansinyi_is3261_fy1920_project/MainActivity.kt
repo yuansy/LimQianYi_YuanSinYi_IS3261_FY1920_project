@@ -74,6 +74,7 @@ class MainActivity : AppCompatActivity() {
 
         var foodDiscount1 = foodDiscountForYou.get(0)
         val mArgs1 = Bundle()
+        mArgs1.putString("ID", foodDiscount1.ID)
         mArgs1.putString("LINE1", foodDiscount1.name)
         mArgs1.putString("LINE2", "$" + "%.2f".format(foodDiscount1.priceDiscount))
         mArgs1.putString("LINE3", foodDiscount1.calorie.toString() + " kcal")
@@ -81,6 +82,7 @@ class MainActivity : AppCompatActivity() {
 
         var foodDiscount2 = foodDiscountForYou.get(1)
         val mArgs2 = Bundle()
+        mArgs2.putString("ID", foodDiscount2.ID)
         mArgs2.putString("LINE1", foodDiscount2.name)
         mArgs2.putString("LINE2", "$" + "%.2f".format(foodDiscount2.priceDiscount))
         mArgs2.putString("LINE3", foodDiscount2.calorie.toString() + " kcal")
@@ -88,6 +90,7 @@ class MainActivity : AppCompatActivity() {
 
         var foodDiscount3 = foodDiscountForYou.get(2)
         val mArgs3 = Bundle()
+        mArgs3.putString("ID", foodDiscount3.ID)
         mArgs3.putString("LINE1", foodDiscount3.name)
         mArgs3.putString("LINE2", "$" + "%.2f".format(foodDiscount3.priceDiscount))
         mArgs3.putString("LINE3", foodDiscount3.calorie.toString() + " kcal")
@@ -103,6 +106,7 @@ class MainActivity : AppCompatActivity() {
 
         var foodPopular1 = foodPopularNow.get(0)
         val mArgs4 = Bundle()
+        mArgs4.putString("ID", foodPopular1.ID)
         mArgs4.putString("LINE1", foodPopular1.name)
         mArgs4.putString("LINE2", "$" + "%.2f".format(foodPopular1.priceDiscount))
         mArgs4.putString("LINE3", foodPopular1.calorie.toString() + " kcal")
@@ -110,6 +114,7 @@ class MainActivity : AppCompatActivity() {
 
         var foodPopular2 = foodPopularNow.get(1)
         val mArgs5 = Bundle()
+        mArgs5.putString("ID", foodPopular2.ID)
         mArgs5.putString("LINE1", foodPopular2.name)
         mArgs5.putString("LINE2", "$" + "%.2f".format(foodPopular2.priceDiscount))
         mArgs5.putString("LINE3", foodPopular2.calorie.toString() + " kcal")
@@ -117,6 +122,7 @@ class MainActivity : AppCompatActivity() {
 
         var foodPopular3 = foodPopularNow.get(2)
         val mArgs6 = Bundle()
+        mArgs6.putString("ID", foodPopular3.ID)
         mArgs6.putString("LINE1", foodPopular3.name)
         mArgs6.putString("LINE2", "$" + "%.2f".format(foodPopular3.priceDiscount))
         mArgs6.putString("LINE3", foodPopular3.calorie.toString() + " kcal")
@@ -137,7 +143,7 @@ class MainActivity : AppCompatActivity() {
                 }
             }
             if (searchID==""){
-                Toast.makeText(this, "No such food!", Toast.LENGTH_LONG).show()
+                Toast.makeText(this, "Oops! No such food!", Toast.LENGTH_LONG).show()
             }
         }
     }

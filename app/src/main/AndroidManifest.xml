@@ -11,20 +11,16 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme.NoActionBar">
-        <activity android:name=".ActivityViewMore"></activity>
-        <activity android:name=".DialogWalletTopUp" />
-        <activity android:name=".ActivityScanPayment" />
-        <activity android:name=".ActivityScanPaymentNormal" />
-        <activity android:name=".DialogAccount" />
-        <activity android:name=".Dialog_Account" />
-        <activity android:name=".ActivityAccount" />
-        <activity android:name=".ActivityWallet" />
-        <activity android:name=".ActivityScanPaid" />
-        <activity android:name=".ActivityScanPaymentIncrease" />
-        <activity android:name=".ActivityScanPaymentDiscount" />
-        <activity android:name=".ActivityScan" />
-        <activity android:name=".ActivityHistory" />
-        <activity android:name=".MainActivity">
+        <activity android:name=".ActivityViewMore" android:screenOrientation="portrait"></activity>
+        <activity android:name=".DialogWalletTopUp" android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityScanPayment" android:screenOrientation="portrait"/>
+        <activity android:name=".DialogAccount" android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityAccount" android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityWallet" android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityScanPaid" android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityScan" android:screenOrientation="portrait"/>
+        <activity android:name=".ActivityHistory" android:screenOrientation="portrait"/>
+        <activity android:name=".MainActivity" android:screenOrientation="portrait">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 

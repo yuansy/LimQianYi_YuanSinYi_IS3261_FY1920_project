@@ -9,6 +9,7 @@ import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
 import android.widget.Button
+import android.widget.ImageView
 import android.widget.TextView
 import android.widget.Toast
 import kotlinx.android.synthetic.main.activity_account.*
@@ -34,7 +35,7 @@ class ActivityAccount : AppCompatActivity() {
         transaction.commit()
 
         val hellotv = findViewById<TextView>(R.id.helloMessage)
-        val butAccountName = findViewById<Button>(R.id.accountName)
+        val butAccountName = findViewById<ImageView>(R.id.accountName)
         butAccountName.setOnClickListener{
             val myIntent = Intent(this, DialogAccount::class.java)
             startActivity(myIntent)

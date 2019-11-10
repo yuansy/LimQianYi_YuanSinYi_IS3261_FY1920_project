@@ -4,22 +4,56 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
+    android:background="@color/pink"
+    android:orientation="vertical"
     tools:context=".DialogWalletTopUp">
 
-    <EditText
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        android:layout_weight="3"
-        android:id="@+id/walletTopUpAmount"
-        android:inputType="number"
-        android:hint="@string/walletTopUpAmount" />
-
-    <Button
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
         android:layout_weight="1"
-        android:background="@color/green"
-        android:id="@+id/walletTopUpDone"
-        android:text="@string/walletTopUpDone" />
+        android:background="@color/pink"
+        android:gravity="center"
+        android:text="@string/walletTopUp"
+        android:textAppearance="@style/TextAppearance.AppCompat.Large"
+        android:textSize="30sp" />
+
+    <ImageView
+        android:id="@+id/imageView"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.5"
+        android:background="@color/pink"
+        android:paddingBottom="20sp"
+        app:srcCompat="@drawable/wallet" />
+
+    <EditText
+        android:id="@+id/walletTopUpAmount"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="0.3"
+        android:hint="@string/walletTopUpAmount"
+        android:inputType="number"
+        android:paddingLeft="30sp" />
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:id="@+id/frameLayout"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1">
+
+        <Button
+            android:id="@+id/walletTopUpDone"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@color/green"
+            android:gravity="center_horizontal|center_vertical"
+            android:text="@string/walletTopUpDone"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
 
 </LinearLayout>

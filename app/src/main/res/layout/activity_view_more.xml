@@ -8,6 +8,13 @@
     tools:context=".ActivityViewMore">
 
 
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        app:srcCompat="@drawable/img_food" />
+
     <TextView
         android:id="@+id/viewMoreName"
         android:layout_width="match_parent"

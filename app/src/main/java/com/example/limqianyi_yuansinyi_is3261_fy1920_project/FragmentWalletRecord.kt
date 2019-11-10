@@ -7,6 +7,10 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.TextView
+import android.R.id
+import android.graphics.Typeface
+import android.text.Html
+
 
 /**
  * A simple [Fragment] subclass.
@@ -26,6 +30,7 @@ class FragmentWalletRecord : Fragment() {
             var Line1 = args.getString("LINE1")
             var twLine1 = view.findViewById<TextView>(R.id.walletRecordName)
             twLine1.setText(Line1)
+            twLine1.setTypeface(null, Typeface.BOLD)
 
             var Line2 = args.getString("LINE2")
             var twLine2 = view.findViewById<TextView>(R.id.walletRecordDatetime)

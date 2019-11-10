@@ -28,8 +28,12 @@ class FragmentHistoryRecord : Fragment() {
 
         if (args != null){
 
+
             var imgFood = view.findViewById<ImageView>(R.id.historyFoodImage)
-            imgFood.setImageResource(R.drawable.img_food)
+            val id = resources.getIdentifier(args.getString("ID").toLowerCase(), "drawable",
+                activity?.packageName
+            )
+            imgFood.setImageResource(id)
             var imgCash = view.findViewById<ImageView>(R.id.historyCash)
             imgCash.setImageResource(R.drawable.img_cash)
 

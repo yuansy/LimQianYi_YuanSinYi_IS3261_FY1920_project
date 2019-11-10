@@ -27,7 +27,7 @@
 
     <string name="walletTopUp">Top Up</string>
     <string name="walletTopUpAmount">Enter amount</string>
-    <string name="walletTopUpDone">Done</string>
+    <string name="walletTopUpDone">Top Up</string>
 
     <string name="accountName">Your Name</string>
     <string name="accountNameChange">Enter your name</string>
