@@ -5,6 +5,7 @@ import android.app.PendingIntent.getActivity
 import android.content.Context
 import android.content.Intent
 import android.content.SharedPreferences
+import android.net.Uri
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.util.Log
@@ -48,6 +49,21 @@ class ActivityAccount : AppCompatActivity() {
         } else {
             hellotv.setText("Hello!")
         }
+
+        val butCalorie = findViewById<ImageView>(R.id.btnCalorie)
+        butCalorie.setOnClickListener{
+            val myIntent = Intent(Intent.ACTION_VIEW)
+            myIntent.data = Uri.parse("https://www.healthhub.sg/programmes/94/calorie-calculator")
+            startActivity(myIntent)
+        }
+
+        val butBMI = findViewById<ImageView>(R.id.btnBMI)
+        butBMI.setOnClickListener{
+            val myIntent = Intent(Intent.ACTION_VIEW)
+            myIntent.data = Uri.parse("https://www.healthhub.sg/programmes/93/bmi-calculator")
+            startActivity(myIntent)
+        }
+
     }
 
 }

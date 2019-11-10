@@ -3,6 +3,8 @@
     package="com.example.limqianyi_yuansinyi_is3261_fy1920_project">
 
     <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.INTERNET"/>
+
 
     <application
         android:allowBackup="true"
