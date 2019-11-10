@@ -129,6 +129,7 @@ class MainActivity : AppCompatActivity() {
         fragmentDiscoverPopularNow3.setArguments(mArgs6)
 
 
+
         val butSearch = findViewById<Button>(R.id.btnSearch)
         butSearch.setOnClickListener {
             val intent = Intent(this, ActivityViewMore::class.java)
@@ -147,6 +148,7 @@ class MainActivity : AppCompatActivity() {
             }
         }
     }
+
 
     fun addFood(food: FoodDataRecord) {
         foodDBHelper.insertFood(food)

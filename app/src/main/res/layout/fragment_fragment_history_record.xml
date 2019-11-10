@@ -95,12 +95,21 @@
                 android:background="@color/pink"
                 android:gravity="left|center_vertical"/>
 
-            <Button
-                android:id="@+id/historybtnViewMore"
+            <FrameLayout
                 android:layout_width="match_parent"
                 android:layout_height="0dp"
                 android:layout_weight="1"
-                android:background="@android:color/transparent"/>
+                android:background="@color/pink"
+                android:padding="20sp">
+
+                <Button
+                    android:id="@+id/historybtnViewMore"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:background="@android:color/transparent"
+                    android:textSize="12sp" />
+            </FrameLayout>
 
         </LinearLayout>
 

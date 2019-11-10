@@ -2,6 +2,7 @@ package com.example.limqianyi_yuansinyi_is3261_fy1920_project
 
 
 import android.content.Intent
+import android.graphics.Paint
 import android.os.Build.ID
 import android.os.Bundle
 import androidx.fragment.app.Fragment
@@ -11,6 +12,9 @@ import android.view.ViewGroup
 import android.widget.Button
 import android.widget.ImageView
 import android.widget.TextView
+import android.graphics.Paint.STRIKE_THRU_TEXT_FLAG
+
+
 
 /**
  * A simple [Fragment] subclass.
@@ -60,8 +64,12 @@ class FragmentHistoryRecord : Fragment() {
             var status = args.getString("STATUS")
             if (status=="-1"){
                 twLine3.setTextColor(getResources().getColor(R.color.greenPrice, null))
+                twLine2.setPaintFlags(twLine2.getPaintFlags() or Paint.STRIKE_THRU_TEXT_FLAG)
+
             } else if (status=="1"){
                 twLine3.setTextColor(getResources().getColor(R.color.redPrice, null))
+                twLine2.setPaintFlags(twLine2.getPaintFlags() or Paint.STRIKE_THRU_TEXT_FLAG)
+
             }
 
             var ID = args.getString("ID")
@@ -72,6 +80,7 @@ class FragmentHistoryRecord : Fragment() {
                 val intent = Intent (getActivity(), ActivityViewMore::class.java)
                 intent.putExtra("ID", ID)
                 intent.putExtra("type", "history")
+                intent.putExtra("status", status)
                 getActivity()!!.startActivity(intent)
             }
         }
