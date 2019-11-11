@@ -2,6 +2,7 @@ package com.example.limqianyi_yuansinyi_is3261_fy1920_project
 
 
 import android.content.Intent
+import android.net.Uri
 import android.os.Bundle
 import android.util.Log
 import androidx.fragment.app.Fragment
@@ -26,11 +27,20 @@ class FragmentDiscoverFood : Fragment() {
 
         var args = getArguments()
 
-        var id = resources.getIdentifier(args!!.getString("ID").toLowerCase(), "drawable",
+        val ID = args!!.getString("ID")
+
+        var id = resources.getIdentifier(ID.toLowerCase(), "drawable",
             activity?.packageName
         )
         var imgFood = view.findViewById<ImageView>(R.id.discoverFoodImage)
         imgFood.setImageResource(id)
+
+        imgFood.setOnClickListener{
+            val intent = Intent (getActivity(), ActivityViewMore::class.java)
+            intent.putExtra("ID", ID)
+            intent.putExtra("type", "search")
+            getActivity()!!.startActivity(intent)
+        }
 
         var Line1 = args!!.getString("LINE1")
         var twLine1 = view.findViewById<TextView>(R.id.discoverFoodLine1)

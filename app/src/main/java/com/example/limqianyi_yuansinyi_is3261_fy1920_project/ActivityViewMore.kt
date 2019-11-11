@@ -42,6 +42,8 @@ class ActivityViewMore : AppCompatActivity() {
             } else if (status==1){
                 priceToPay.text = food.priceIncrease.toString()
                 priceToPay.setTextColor(getResources().getColor(R.color.redPrice, null))
+            } else {
+                priceToPay.text = food.price.toString()
             }
         } else {
             viewMorePrice.text = food.price.toString()

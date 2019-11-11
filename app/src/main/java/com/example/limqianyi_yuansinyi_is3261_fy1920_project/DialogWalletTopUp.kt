@@ -23,9 +23,9 @@ class DialogWalletTopUp : AppCompatActivity() {
         butTopUp.setOnClickListener {
             val dateTime = SimpleDateFormat("dd MMM, HH:mm a").format(Date())
             val amount = walletTopUpAmount.text.toString().toFloat()
-
-            transactionDBHelper.insertTransaction(TransactionDataRecord(dateTime, "Top Up", amount, 0, "0"))
-
+            if (amount>0){
+                transactionDBHelper.insertTransaction(TransactionDataRecord(dateTime, "Top Up", amount, 0, "0"))
+            }
             val myIntent = Intent(this, ActivityWallet::class.java)
             startActivity(myIntent)
         }
