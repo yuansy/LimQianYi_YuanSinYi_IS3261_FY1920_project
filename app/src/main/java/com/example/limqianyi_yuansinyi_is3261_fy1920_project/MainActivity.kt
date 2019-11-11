@@ -99,7 +99,7 @@ class MainActivity : AppCompatActivity() {
 
         val foodPopularNow = ArrayList<FoodDataRecord>()
         food.forEach{
-            if (it.currStatus != -1 && foodPopularNow.size != 3 && !foodDiscountForYou.contains(it)) {
+            if (it.currStatus != -1 && foodPopularNow.size != 3 && !foodDiscountForYou.contains(it) && it.category != "unhealthy") {
                 foodPopularNow.add(it)
             }
         }
